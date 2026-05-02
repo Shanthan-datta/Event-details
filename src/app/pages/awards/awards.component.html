@@ -1,0 +1,97 @@
+<!-- PAGE HEADER -->
+<section class="page-header">
+  <div class="container text-center">
+    <div class="page-header-om">ॐ</div>
+    <h1 class="page-header-title">Awards & Honours</h1>
+    <p class="page-header-subtitle">Recognition of His Holiness Sri Ganapathi Sachchidananda Swamiji's divine service</p>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb justify-content-center">
+        <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Awards & Honours</li>
+      </ol>
+    </nav>
+  </div>
+</section>
+
+<!-- INTRO -->
+<section class="awards-intro section-padding">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center reveal">
+        <div class="om-symbol">ॐ</div>
+        <h2 class="section-title">A Legacy of Divine Service</h2>
+        <hr class="section-divider">
+        <p class="intro-text">
+          His Holiness Sri Ganapathi Sachchidananda Swamiji has been honored with numerous prestigious
+          awards and recognitions from governments, spiritual organizations, and institutions worldwide
+          for His tireless service to humanity, environmental conservation, and the propagation of
+          Sanatana Dharma.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AWARDS GALLERY -->
+<section class="awards-gallery section-padding">
+  <div class="container">
+    <div class="gallery-grid">
+      <div class="gallery-item reveal" *ngFor="let award of awards; let i = index"
+           [style.animation-delay]="(i * 0.08) + 's'" (click)="openLightbox(award)">
+        <div class="gallery-card">
+          <div class="gallery-image-wrapper">
+            <img [src]="award.image" [alt]="award.title" class="gallery-image"
+                 (error)="$any($event.target).src = 'om-symbol.png'">
+            <div class="gallery-overlay">
+              <i class="bi bi-zoom-in"></i>
+              <span>View Details</span>
+            </div>
+            <span class="gallery-year-badge" *ngIf="award.year">{{ award.year }}</span>
+          </div>
+          <div class="gallery-info" *ngIf="award.title">
+            <h5 class="gallery-title">{{ award.title }}</h5>
+            <p class="gallery-location" *ngIf="award.location">
+              <i class="bi bi-geo-alt"></i> {{ award.location }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LIGHTBOX MODAL -->
+<div class="lightbox-overlay" *ngIf="selectedAward" (click)="closeLightbox()">
+  <div class="lightbox-content" (click)="$event.stopPropagation()">
+    <button class="lightbox-close" (click)="closeLightbox()">
+      <i class="bi bi-x-lg"></i>
+    </button>
+    <button class="lightbox-nav lightbox-prev" (click)="navigateAward(-1)">
+      <i class="bi bi-chevron-left"></i>
+    </button>
+    <div class="lightbox-image-container">
+      <img [src]="selectedAward.image" [alt]="selectedAward.title" class="lightbox-image"
+           (error)="$any($event.target).src = 'om-symbol.png'">
+    </div>
+    <button class="lightbox-nav lightbox-next" (click)="navigateAward(1)">
+      <i class="bi bi-chevron-right"></i>
+    </button>
+    <div class="lightbox-info" *ngIf="selectedAward.title">
+      <h4>{{ selectedAward.title }}</h4>
+      <p class="lightbox-desc" *ngIf="selectedAward.description">{{ selectedAward.description }}</p>
+      <p class="lightbox-meta" *ngIf="selectedAward.year || selectedAward.location">
+        <span *ngIf="selectedAward.year"><i class="bi bi-calendar3"></i> {{ selectedAward.year }}</span>
+        <span *ngIf="selectedAward.location"><i class="bi bi-geo-alt"></i> {{ selectedAward.location }}</span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<section class="cta-banner">
+  <div class="container text-center">
+    <h2 class="cta-banner-title">Experience the Divine Presence</h2>
+    <p class="cta-banner-text">Join us for Swamiji's visit to Ireland on 16 June 2026</p>
+    <a href="https://forms.gle/YOUR_GOOGLE_FORM_ID" target="_blank" rel="noopener" class="btn btn-divine btn-lg"><i class="bi bi-pencil-square me-2"></i>Register Now</a>
+  </div>
+</section>

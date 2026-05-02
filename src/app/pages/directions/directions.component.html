@@ -1,0 +1,112 @@
+<!-- PAGE HEADER -->
+<section class="page-header">
+  <div class="container text-center">
+    <div class="page-header-om">ॐ</div>
+    <h1 class="page-header-title">Venue & Directions</h1>
+    <p class="page-header-subtitle">Knightsbrook Resort Event Hall, Trim, Co. Meath</p>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb justify-content-center">
+        <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Venue & Directions</li>
+      </ol>
+    </nav>
+  </div>
+</section>
+
+<!-- VENUE DETAILS -->
+<section class="section-padding">
+  <div class="container">
+    <div class="row g-5">
+      <!-- Map -->
+      <div class="col-lg-7 reveal">
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2374.5!2d-6.7919!3d53.5557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486740d4b2c7ed2f%3A0x42f6d3c69d3b81a!2sKnightsbrook%20Hotel%20Spa%20%26%20Golf%20Resort!5e0!3m2!1sen!2sie!4v1"
+            width="100%" height="500" style="border:0; border-radius:16px"
+            allowfullscreen="" loading="lazy"
+            title="Knightsbrook Resort Location Map">
+          </iframe>
+        </div>
+        <div class="text-center mt-3">
+          <a [href]="googleMapsUrl" target="_blank" rel="noopener" class="btn btn-divine">
+            <i class="bi bi-map me-2"></i>Open in Google Maps
+          </a>
+        </div>
+      </div>
+
+      <!-- Venue Info -->
+      <div class="col-lg-5 reveal">
+        <div class="venue-info-card divine-card">
+          <h3 class="venue-card-title">
+            <i class="bi bi-building me-2"></i>Venue Information
+          </h3>
+          <div class="venue-info-item">
+            <i class="bi bi-geo-alt-fill"></i>
+            <div>
+              <h5>Full Address</h5>
+              <p>Knightsbrook Resort Event Hall<br>Dublin Road, Trim<br>Co. Meath, C15 WYF4<br>Ireland</p>
+            </div>
+          </div>
+          <div class="venue-info-item">
+            <i class="bi bi-calendar-event"></i>
+            <div>
+              <h5>Date</h5>
+              <p>16 June 2026 (Tuesday)</p>
+            </div>
+          </div>
+          <div class="venue-info-item">
+            <i class="bi bi-clock"></i>
+            <div>
+              <h5>Time</h5>
+              <p>5:00 PM – 10:00 PM</p>
+            </div>
+          </div>
+          <div class="venue-info-item">
+            <i class="bi bi-car-front"></i>
+            <div>
+              <h5>Parking</h5>
+              <p>Free parking is available at the resort</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Travel Tips -->
+        <div class="divine-card mt-4 reveal">
+          <h3 class="venue-card-title">
+            <i class="bi bi-signpost-split me-2"></i>How to Get There
+          </h3>
+          <div class="travel-tip">
+            <div class="travel-icon"><i class="bi bi-car-front"></i></div>
+            <div>
+              <h5>By Car</h5>
+              <p>Approximately 45 minutes from Dublin City Centre via the M3 motorway. Take Exit 6 for Trim.</p>
+            </div>
+          </div>
+          <div class="travel-tip">
+            <div class="travel-icon"><i class="bi bi-bus-front"></i></div>
+            <div>
+              <h5>By Bus</h5>
+              <p>Bus Éireann services run from Dublin (Busáras) to Trim. The resort is a short taxi ride from Trim town centre.</p>
+            </div>
+          </div>
+          <div class="travel-tip">
+            <div class="travel-icon"><i class="bi bi-airplane"></i></div>
+            <div>
+              <h5>From Dublin Airport</h5>
+              <p>The venue is approximately 50 km from Dublin Airport. Rental cars and taxi services are readily available.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-banner">
+  <div class="container text-center">
+    <h2 class="cta-banner-title">Ready to Join Us?</h2>
+    <p class="cta-banner-text">Register now to reserve your spot at this divine gathering</p>
+    <a href="https://forms.gle/YOUR_GOOGLE_FORM_ID" target="_blank" rel="noopener" class="btn btn-divine btn-lg"><i class="bi bi-pencil-square me-2"></i>Register Now</a>
+  </div>
+</section>

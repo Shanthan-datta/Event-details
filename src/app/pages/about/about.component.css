@@ -1,0 +1,183 @@
+/* Page Header */
+.page-header {
+  background: linear-gradient(135deg, #2C1810 0%, #5C1010 50%, #8B1A1A 100%);
+  padding: 140px 0 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('/hero-bg.png') center/cover no-repeat;
+  opacity: 0.08;
+}
+
+.page-header-om {
+  font-size: 3rem;
+  color: #FFD700;
+  text-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.page-header-title {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 2.5rem;
+  color: #F0D060;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.page-header-subtitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem;
+  color: #F5E6C8;
+  font-style: italic;
+  position: relative;
+}
+
+.breadcrumb {
+  background: transparent;
+  margin-top: 15px;
+  position: relative;
+}
+
+.breadcrumb-item a {
+  color: #F0D060;
+  text-decoration: none;
+}
+
+.breadcrumb-item.active {
+  color: #C9B896;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: #C9B896;
+}
+
+/* Sidebar */
+.about-main-image {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+}
+
+.about-image-card {
+  border-radius: 20px;
+  overflow: hidden;
+  border: 3px solid rgba(212, 160, 23, 0.3);
+}
+
+.about-info-card h5 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+  color: #8B1A1A;
+  font-size: 1.05rem;
+}
+
+.about-info-card p {
+  color: #8B7355;
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+
+.about-info-card hr {
+  border-color: rgba(212, 160, 23, 0.2);
+  margin: 12px 0;
+}
+
+/* Main Content */
+.content-title {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 2rem;
+  color: #8B1A1A;
+}
+
+.content-subtitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #8B1A1A;
+}
+
+.content-text {
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: #4A3728;
+  margin-bottom: 16px;
+}
+
+/* Mission List */
+.mission-item {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+  padding: 16px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.mission-item:hover {
+  background: rgba(232, 137, 29, 0.06);
+}
+
+.mission-icon {
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #E8891D, #D4A017);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mission-icon i {
+  font-size: 1.3rem;
+  color: white;
+}
+
+.mission-item h5 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+  color: #2C1810;
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+}
+
+.mission-item p {
+  color: #8B7355;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Quote */
+.about-quote-block {
+  background: linear-gradient(135deg, rgba(139, 26, 26, 0.05), rgba(212, 160, 23, 0.08));
+  border-left: 4px solid #D4A017;
+  padding: 24px;
+  border-radius: 0 16px 16px 0;
+}
+
+.about-quote-block .bi-quote {
+  font-size: 2.5rem;
+  color: #D4A017;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.about-quote-block blockquote {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #5C1010;
+  margin: 0;
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .page-header { padding: 120px 0 40px; }
+  .page-header-title { font-size: 1.8rem; }
+}

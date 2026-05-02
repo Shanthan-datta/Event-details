@@ -1,0 +1,133 @@
+<!-- PAGE HEADER -->
+<section class="page-header">
+  <div class="container text-center">
+    <div class="page-header-om">ॐ</div>
+    <h1 class="page-header-title">Register for the Event</h1>
+    <p class="page-header-subtitle">Secure your place at this divine gathering</p>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb justify-content-center">
+        <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Register</li>
+      </ol>
+    </nav>
+  </div>
+</section>
+
+<!-- REGISTRATION FORM -->
+<section class="section-padding">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+
+        <!-- Success Message -->
+        <div *ngIf="isSubmitted" class="success-card text-center reveal revealed">
+          <div class="success-icon">
+            <i class="bi bi-check-circle"></i>
+          </div>
+          <h2 class="success-title">Registration Successful!</h2>
+          <p class="success-om">ॐ Sri Guru Datta ॐ</p>
+          <p class="success-text">
+            Thank you for registering. We look forward to your presence at the divine event
+            on <strong>16 June 2026</strong> at <strong>Knightsbrook Resort, Trim</strong>.
+          </p>
+          <p class="success-text">You will receive a confirmation email shortly.</p>
+          <div class="success-actions">
+            <a routerLink="/" class="btn btn-divine me-2"><i class="bi bi-house me-2"></i>Back to Home</a>
+            <button class="btn btn-divine-outline" (click)="resetForm()"><i class="bi bi-arrow-repeat me-2"></i>Register Another</button>
+          </div>
+        </div>
+
+        <!-- Registration Form -->
+        <div *ngIf="!isSubmitted" class="register-card divine-card reveal revealed">
+          <div class="text-center mb-4">
+            <div class="om-symbol">ॐ</div>
+            <h2 class="form-title">Event Registration</h2>
+            <p class="form-subtitle">16 June 2026 &bull; 5:00 PM – 10:00 PM &bull; Knightsbrook Resort, Trim</p>
+            <hr class="section-divider">
+          </div>
+
+          <form (ngSubmit)="onSubmit()" #regForm="ngForm">
+            <!-- Full Name -->
+            <div class="mb-4">
+              <label for="fullName" class="form-label">
+                <i class="bi bi-person me-1"></i> Full Name <span class="required">*</span>
+              </label>
+              <input type="text" class="form-control custom-input" id="fullName" name="fullName"
+                     [(ngModel)]="form.fullName" required placeholder="Enter your full name">
+            </div>
+
+            <!-- Email -->
+            <div class="mb-4">
+              <label for="email" class="form-label">
+                <i class="bi bi-envelope me-1"></i> Email Address <span class="required">*</span>
+              </label>
+              <input type="email" class="form-control custom-input" id="email" name="email"
+                     [(ngModel)]="form.email" required placeholder="Enter your email address">
+            </div>
+
+            <!-- Phone -->
+            <div class="mb-4">
+              <label for="phone" class="form-label">
+                <i class="bi bi-telephone me-1"></i> Phone Number
+              </label>
+              <input type="tel" class="form-control custom-input" id="phone" name="phone"
+                     [(ngModel)]="form.phone" placeholder="Enter your phone number (optional)">
+            </div>
+
+            <!-- Number of Guests -->
+            <div class="mb-4">
+              <label for="guests" class="form-label">
+                <i class="bi bi-people me-1"></i> Number of Guests (including yourself)
+              </label>
+              <select class="form-select custom-input" id="guests" name="numberOfGuests"
+                      [(ngModel)]="form.numberOfGuests">
+                <option [value]="1">1 Person</option>
+                <option [value]="2">2 People</option>
+                <option [value]="3">3 People</option>
+                <option [value]="4">4 People</option>
+                <option [value]="5">5 People</option>
+                <option [value]="6">6+ People</option>
+              </select>
+            </div>
+
+            <!-- Message -->
+            <div class="mb-4">
+              <label for="message" class="form-label">
+                <i class="bi bi-chat-dots me-1"></i> Message (Optional)
+              </label>
+              <textarea class="form-control custom-input" id="message" name="message" rows="3"
+                        [(ngModel)]="form.message" placeholder="Any special requirements or message"></textarea>
+            </div>
+
+            <!-- Agreement -->
+            <div class="mb-4 form-check custom-check">
+              <input type="checkbox" class="form-check-input" id="agree" name="agreeToTerms"
+                     [(ngModel)]="form.agreeToTerms" required>
+              <label class="form-check-label" for="agree">
+                I confirm my attendance and understand this is a spiritual event. <span class="required">*</span>
+              </label>
+            </div>
+
+            <!-- Submit -->
+            <div class="text-center mt-4">
+              <button type="submit" class="btn btn-divine btn-lg w-100"
+                      [disabled]="!form.fullName || !form.email || !form.agreeToTerms || isSubmitting">
+                <span *ngIf="!isSubmitting">
+                  <i class="bi bi-pencil-square me-2"></i>Complete Registration
+                </span>
+                <span *ngIf="isSubmitting">
+                  <span class="spinner-border spinner-border-sm me-2" role="status"></span>Submitting...
+                </span>
+              </button>
+            </div>
+
+            <p class="form-note text-center mt-3">
+              <i class="bi bi-info-circle me-1"></i>
+              This event is free of charge. Registration helps us plan the seating arrangements.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

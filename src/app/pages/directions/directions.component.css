@@ -1,0 +1,131 @@
+/* Page Header */
+.page-header {
+  background: linear-gradient(135deg, #2C1810 0%, #5C1010 50%, #8B1A1A 100%);
+  padding: 140px 0 60px;
+  position: relative;
+  overflow: hidden;
+}
+.page-header::before { content: ''; position: absolute; inset: 0; background: url('/hero-bg.png') center/cover no-repeat; opacity: 0.08; }
+.page-header-om { font-size: 3rem; color: #FFD700; text-shadow: 0 0 30px rgba(255,215,0,0.5); margin-bottom: 10px; position: relative; }
+.page-header-title { font-family: 'Cinzel Decorative', serif; font-size: 2.5rem; color: #F0D060; margin-bottom: 8px; position: relative; }
+.page-header-subtitle { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; color: #F5E6C8; font-style: italic; position: relative; }
+.breadcrumb { background: transparent; margin-top: 15px; position: relative; }
+.breadcrumb-item a { color: #F0D060; text-decoration: none; }
+.breadcrumb-item.active { color: #C9B896; }
+.breadcrumb-item + .breadcrumb-item::before { color: #C9B896; }
+
+/* Map */
+.map-container {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.12);
+  border: 3px solid rgba(212, 160, 23, 0.3);
+}
+
+/* Venue Card */
+.venue-card-title {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 1.3rem;
+  color: #8B1A1A;
+  margin-bottom: 24px;
+}
+
+.venue-info-item {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 20px;
+  align-items: flex-start;
+}
+
+.venue-info-item > i {
+  font-size: 1.3rem;
+  color: #E8891D;
+  margin-top: 3px;
+  min-width: 24px;
+}
+
+.venue-info-item h5 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+  color: #2C1810;
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+.venue-info-item p {
+  color: #8B7355;
+  font-size: 0.9rem;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Travel Tips */
+.travel-tip {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 20px;
+  padding: 14px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.travel-tip:hover {
+  background: rgba(232, 137, 29, 0.06);
+}
+
+.travel-icon {
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #E8891D, #D4A017);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.travel-icon i {
+  font-size: 1.1rem;
+  color: white;
+}
+
+.travel-tip h5 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+  color: #2C1810;
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+.travel-tip p {
+  color: #8B7355;
+  font-size: 0.88rem;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* CTA Banner */
+.cta-banner {
+  background: linear-gradient(135deg, #8B1A1A 0%, #5C1010 100%);
+  padding: 60px 0;
+}
+
+.cta-banner-title {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 2rem;
+  color: #F0D060;
+  margin-bottom: 10px;
+}
+
+.cta-banner-text {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.15rem;
+  color: #F5E6C8;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 768px) {
+  .page-header { padding: 120px 0 40px; }
+  .page-header-title { font-size: 1.8rem; }
+  .cta-banner-title { font-size: 1.5rem; }
+}

@@ -1,0 +1,256 @@
+<!-- HERO SECTION -->
+<section id="hero" class="hero-section">
+  <div class="hero-overlay"></div>
+  <div class="hero-particles">
+    <div class="particle particle-1"></div>
+    <div class="particle particle-2"></div>
+    <div class="particle particle-3"></div>
+    <div class="particle particle-4"></div>
+    <div class="particle particle-5"></div>
+  </div>
+  <div class="container position-relative">
+    <div class="hero-content text-center">
+      <!-- Divine Portrait -->
+      <div class="divine-portrait animate-fade-in-down">
+        <div class="portrait-halo portrait-halo-outer"></div>
+        <div class="portrait-halo portrait-halo-inner"></div>
+        <div class="portrait-aura"></div>
+        <div class="portrait-ring"></div>
+        <img src="swamiji-1.jpeg" alt="His Holiness Sri Ganapathi Sachchidananda Swamiji" class="portrait-img">
+        <!-- Floating light orbs -->
+        <div class="portrait-orb orb-1"></div>
+        <div class="portrait-orb orb-2"></div>
+        <div class="portrait-orb orb-3"></div>
+        <div class="portrait-orb orb-4"></div>
+        <div class="portrait-orb orb-5"></div>
+        <div class="portrait-orb orb-6"></div>
+        <div class="portrait-orb orb-7"></div>
+        <div class="portrait-orb orb-8"></div>
+      </div>
+      <div class="hero-om animate-fade-in-down">ॐ</div>
+      <p class="hero-subtitle animate-fade-in-down delay-1">A Divine Invitation</p>
+      <h1 class="hero-title animate-fade-in-up delay-2">
+        His Holiness<br>
+        <span class="hero-name">Sri Ganapathi Sachchidananda Swamiji</span>
+      </h1>
+      <p class="hero-role animate-fade-in-up delay-3">Peetadhipati, Avadhoota Datta Peetham®, Mysore, India</p>
+      <div class="hero-divider animate-fade-in-up delay-3">
+        <img src="swamiji-9.jpeg" alt="Sri Swamiji" class="hero-divider-img">
+      </div>
+      <p class="hero-announcement animate-fade-in-up delay-4">
+        Will be visiting <strong>Ireland</strong> for a blessed evening of
+      </p>
+      <h2 class="hero-programs animate-fade-in-up delay-4">
+        Hanuman Chalisa Parayana, Bhajans &amp; Anugraha Bhashana
+      </h2>
+      <div class="hero-info-cards animate-fade-in-up delay-5">
+        <div class="hero-info-card">
+          <i class="bi bi-calendar-event"></i>
+          <div><strong>16 June 2026</strong><span>Tuesday</span></div>
+        </div>
+        <div class="hero-info-card">
+          <i class="bi bi-clock"></i>
+          <div><strong>5:00 PM – 10:00 PM</strong><span>Evening Program</span></div>
+        </div>
+        <div class="hero-info-card">
+          <i class="bi bi-geo-alt"></i>
+          <div><strong>Knightsbrook Resort</strong><span>Trim, Co. Meath</span></div>
+        </div>
+      </div>
+      <div class="hero-actions animate-fade-in-up delay-6">
+        <a href="https://forms.gle/YOUR_GOOGLE_FORM_ID" target="_blank" rel="noopener" class="btn btn-divine btn-lg me-3">
+          <i class="bi bi-pencil-square me-2"></i>Register Now
+        </a>
+        <a routerLink="/directions" class="btn btn-divine-outline btn-lg">
+          <i class="bi bi-map me-2"></i>Get Directions
+        </a>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- COUNTDOWN SECTION -->
+<section class="countdown-section">
+  <div class="container">
+    <div class="countdown-wrapper reveal">
+      <p class="countdown-label">The Divine Event Begins In</p>
+      <div class="countdown-timer">
+        <div class="countdown-unit">
+          <span class="countdown-number">{{ padZero(countdown.days) }}</span>
+          <span class="countdown-text">Days</span>
+        </div>
+        <span class="countdown-separator">:</span>
+        <div class="countdown-unit">
+          <span class="countdown-number">{{ padZero(countdown.hours) }}</span>
+          <span class="countdown-text">Hours</span>
+        </div>
+        <span class="countdown-separator">:</span>
+        <div class="countdown-unit">
+          <span class="countdown-number">{{ padZero(countdown.minutes) }}</span>
+          <span class="countdown-text">Minutes</span>
+        </div>
+        <span class="countdown-separator">:</span>
+        <div class="countdown-unit">
+          <span class="countdown-number">{{ padZero(countdown.seconds) }}</span>
+          <span class="countdown-text">Seconds</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="about-section section-padding">
+  <div class="container">
+    <div class="text-center reveal">
+      <div class="om-symbol">ॐ</div>
+      <h2 class="section-title">About His Holiness</h2>
+      <hr class="section-divider">
+    </div>
+    <div class="row align-items-center g-5">
+      <div class="col-lg-5 reveal">
+        <div class="about-image-wrapper">
+          <img src="swamiji-2.jpeg" alt="Sri Ganapathi Sachchidananda Swamiji" class="about-image">
+          <div class="about-image-glow"></div>
+        </div>
+      </div>
+      <div class="col-lg-7 reveal">
+        <div class="about-content">
+          <h3 class="about-name">Sri Ganapathi Sachchidananda Swamiji</h3>
+          <p class="about-role">Peetadhipati, Avadhoota Datta Peetham®, Mysore, India</p>
+          <p class="about-text">Sri Ganapathi Sachchidananda Swamiji is a revered spiritual master and the Peetadhipati of Avadhoota Datta Peetham®, Mysore.</p>
+          <p class="about-text">His divine mission is to spread the timeless wisdom of Sanatana Dharma, uplift humanity, and guide seekers on the path of devotion, selfless service and liberation.</p>
+          <div class="about-quote">
+            <i class="bi bi-quote"></i>
+            <p>Let us come together in devotion, unity, and spiritual harmony to receive Swamiji's divine blessings.</p>
+          </div>
+          <a routerLink="/about" class="btn btn-divine mt-3"><i class="bi bi-arrow-right me-2"></i>Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAMS SECTION -->
+<section id="programs" class="programs-section section-padding">
+  <div class="container">
+    <div class="text-center reveal">
+      <div class="om-symbol">ॐ</div>
+      <h2 class="section-title">Sacred Programs</h2>
+      <p class="section-subtitle">On this auspicious occasion, special programs will be organized for the grace and blessings of all</p>
+      <hr class="section-divider">
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-3 col-md-6" *ngFor="let program of programs; let i = index">
+        <div class="program-card reveal" [style.animation-delay]="(i*0.15)+'s'">
+          <div class="program-image-wrapper">
+            <img [src]="program.image" [alt]="program.title" class="program-image">
+            <div class="program-image-overlay"></div>
+            <div class="program-icon-badge">
+              <i class="bi" [ngClass]="program.icon"></i>
+            </div>
+          </div>
+          <div class="program-content">
+            <h4 class="program-title">{{ program.title }}</h4>
+            <p class="program-desc">{{ program.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VENUE SECTION -->
+<section id="venue" class="venue-section section-padding">
+  <div class="container">
+    <div class="text-center reveal">
+      <div class="om-symbol">ॐ</div>
+      <h2 class="section-title">Event Venue</h2>
+      <p class="section-subtitle">Knightsbrook Resort Event Hall, Trim</p>
+      <hr class="section-divider">
+    </div>
+    <div class="row g-4 align-items-center">
+      <div class="col-lg-6 reveal">
+        <div class="venue-map-wrapper">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2374.5!2d-6.7919!3d53.5557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486740d4b2c7ed2f%3A0x42f6d3c69d3b81a!2sKnightsbrook%20Hotel%20Spa%20%26%20Golf%20Resort!5e0!3m2!1sen!2sie!4v1" width="100%" height="400" style="border:0;border-radius:16px" allowfullscreen="" loading="lazy" title="Knightsbrook Resort"></iframe>
+        </div>
+      </div>
+      <div class="col-lg-6 reveal">
+        <div class="venue-details">
+          <div class="venue-detail-item">
+            <div class="venue-detail-icon"><i class="bi bi-building"></i></div>
+            <div><h5>Knightsbrook Resort Event Hall</h5><p>A premier venue in the heart of Ireland's heritage town</p></div>
+          </div>
+          <div class="venue-detail-item">
+            <div class="venue-detail-icon"><i class="bi bi-geo-alt-fill"></i></div>
+            <div><h5>Address</h5><p>Dublin Road, Trim, Co. Meath, C15 WYF4, Ireland</p></div>
+          </div>
+          <div class="venue-detail-item">
+            <div class="venue-detail-icon"><i class="bi bi-clock-fill"></i></div>
+            <div><h5>Date &amp; Time</h5><p>16 June 2026 (Tuesday) &bull; 5:00 PM – 10:00 PM</p></div>
+          </div>
+          <div class="venue-actions">
+            <a href="https://maps.app.goo.gl/TXG7w6YzX18kR5oC7" target="_blank" rel="noopener" class="btn btn-divine me-2"><i class="bi bi-map me-2"></i>Open in Google Maps</a>
+            <a routerLink="/directions" class="btn btn-divine-outline"><i class="bi bi-signpost-split me-2"></i>Detailed Directions</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="contact-section section-padding">
+  <div class="container">
+    <div class="text-center reveal">
+      <div class="om-symbol">ॐ</div>
+      <h2 class="section-title">Feel Free to Contact</h2>
+      <p class="section-subtitle">For any queries or assistance, please reach out to our coordinators</p>
+      <hr class="section-divider">
+    </div>
+    <div class="row g-4 justify-content-center">
+      <!-- Pavan -->
+      <div class="col-md-5 col-sm-6 reveal">
+        <div class="contact-card">
+          <div class="contact-avatar">
+            <i class="bi bi-person-circle"></i>
+          </div>
+          <h4 class="contact-name">Pavan</h4>
+          <p class="contact-phone">
+            <i class="bi bi-telephone-fill me-2"></i>+353 89 954 9598
+          </p>
+          <a href="https://wa.me/353899549598" target="_blank" rel="noopener" class="btn btn-whatsapp">
+            <i class="bi bi-whatsapp me-2"></i>Chat on WhatsApp
+          </a>
+        </div>
+      </div>
+      <!-- Kishore -->
+      <div class="col-md-5 col-sm-6 reveal">
+        <div class="contact-card">
+          <div class="contact-avatar">
+            <i class="bi bi-person-circle"></i>
+          </div>
+          <h4 class="contact-name">Kishore</h4>
+          <p class="contact-phone">
+            <i class="bi bi-telephone-fill me-2"></i>+353 89 961 1209
+          </p>
+          <a href="https://wa.me/353899611209" target="_blank" rel="noopener" class="btn btn-whatsapp">
+            <i class="bi bi-whatsapp me-2"></i>Chat on WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container text-center">
+    <div class="cta-content reveal">
+      <div class="cta-om">ॐ</div>
+      <h2 class="cta-title">Be Part of This Divine Occasion</h2>
+      <p class="cta-text">We cordially invite you, your family and friends to attend the program and receive Swamiji's divine blessings. Your presence will make this event truly blessed.</p>
+      <a href="https://forms.gle/YOUR_GOOGLE_FORM_ID" target="_blank" rel="noopener" class="btn btn-divine btn-lg"><i class="bi bi-pencil-square me-2"></i>Register Now — It's Free</a>
+    </div>
+  </div>
+</section>
