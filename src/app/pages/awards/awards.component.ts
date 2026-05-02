@@ -30,24 +30,24 @@ export class AwardsComponent implements OnInit {
     },
     {
       image: 'awards/award-2.jpg',
-      title: 'Largest Music Therapy Lesson',
-      description: 'Guinness World Record for the largest music therapy lesson with 1,814 people at the Sydney Opera House, conducted by Sri Swamiji.',
+      title: 'Largest Music Therapy Session',
+      description: 'Guinness World Record for the largest music therapy session, where Sri Swamiji demonstrated the healing power of Raga-based music (Nada Chikitsa) with his synthesizer at the iconic Sydney Opera House.',
       year: '2015',
       location: 'Sydney Opera House, Australia'
     },
     {
       image: 'awards/award-3.jpg',
-      title: 'Longest Chanting Marathon (Team)',
-      description: 'Guinness World Record for the longest chanting marathon lasting 24 hours, 10 minutes and 8 seconds at Karya Siddhi Hanuman Temple.',
-      year: '2015',
-      location: 'Frisco, Texas, USA'
-    },
-    {
-      image: 'awards/award-4.jpg',
       title: 'Largest Breathing Lesson',
       description: 'Guinness World Record for the "Largest breathing lesson" (Pranayama) at India Community Center, organized by Dashavatara Yoga Center (USA).',
       year: '2016',
       location: 'Milpitas, California, USA'
+    },
+    {
+      image: 'awards/award-4.jpg',
+      title: 'Largest Online Video Album of People Chanting',
+      description: 'Guinness World Record for the largest online video album of people chanting with 40,976 videos of devotees chanting Hanuman Chalisa from around the world.',
+      year: '2016',
+      location: 'Carapichaima, Trinidad and Tobago'
     },
     {
       image: 'awards/award-5.jpg',
@@ -57,28 +57,28 @@ export class AwardsComponent implements OnInit {
       location: 'Carapichaima, Trinidad and Tobago'
     },
     {
-      image: 'awards/award-6.jpg',
+      image: 'awards/award-9.jpg',
       title: 'Largest Display of Bonsai Trees',
       description: 'Guinness World Record for the largest display of Bonsai trees — 2,649 trees exhibited at the World Bonsai Convention at Mysuru Ashram.',
       year: '2016',
       location: 'Mysuru, India'
     },
     {
-      image: 'awards/award-7.jpg',
+      image: 'awards/award-6.jpg',
       title: 'Most Bird Species in an Aviary',
       description: 'Guinness World Record for the most bird species in a single aviary — 468 species housed at Shuka Vana, the sacred bird sanctuary at Avadhoota Datta Peetham.',
       year: '2017',
       location: 'Mysuru, India'
     },
     {
-      image: 'awards/award-8.jpg',
+      image: 'awards/award-7.jpg',
       title: 'Largest Hindu Smriti (Bhagavad Gita)',
       description: 'Guinness World Record for the largest Hindu Smriti — a magnificent Bhagavad Gita book measuring 2.24m × 1.56m, unveiled on Sri Swamiji\'s 75th birthday.',
       year: '2017',
       location: 'Mysuru, India'
     },
     {
-      image: 'awards/award-9.jpg',
+      image: 'awards/award-11.jpg',
       title: 'World\'s Largest Special Stamp',
       description: 'Guinness World Record for the world\'s largest special stamp measuring 2.87 m² (30.9 sq ft), issued by the Indian Postal Department.',
       year: '2018',
@@ -93,10 +93,10 @@ export class AwardsComponent implements OnInit {
     },
     {
       image: 'awards/award-11.jpg',
-      title: 'Largest Simultaneous Hindu Text Recital',
-      description: 'Guinness World Record for the largest simultaneous Hindu text recital organized by devotees in Dallas, USA.',
-      year: '2022',
-      location: 'Dallas, Texas, USA'
+      title: 'World\'s Largest Special Stamp',
+      description: 'Guinness World Record for the world\'s largest special stamp measuring 13.104 m² (140.92 sq ft), issued by the Indian Postal Department.',
+      year: '2018',
+      location: 'Avadhoota Datta Peetham, Mysuru'
     },
     {
       image: 'awards/award-12.jpg',

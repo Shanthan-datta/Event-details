@@ -12,6 +12,7 @@
   padding: 120px 0 80px;
 }
 
+
 /* ============================================
    DIVINE PORTRAIT — Hero Section
    ============================================ */
@@ -1252,11 +1253,124 @@
   line-height: 1.3;
 }
 
-@media (max-width: 992px) {
-  .itinerary-floating {
-    position: static;
-    transform: none;
-    margin: 30px auto 0;
+@media (max-width: 768px) {
+  /* Hero section — stack & center everything */
+  .hero-section {
+    padding: 100px 0 60px;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 15px;
+    width: 100%;
+  }
+
+  /* Portrait — centered */
+  .divine-portrait {
+    margin: 0 auto 24px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .portrait-img {
+    display: block;
+    margin: 0 auto;
+    width: 170px;
+    height: 170px;
+  }
+
+  /* Text elements */
+  .hero-om {
+    font-size: 3rem;
+  }
+
+  .hero-subtitle,
+  .hero-title,
+  .hero-name,
+  .hero-role,
+  .hero-announcement,
+  .hero-programs {
+    text-align: center;
+    width: 100%;
+  }
+
+  .hero-title {
+    font-size: 1.6rem;
+  }
+
+  .hero-name {
+    font-size: 1.5rem;
+  }
+
+  .hero-programs {
+    font-size: 0.95rem;
+  }
+
+  /* Info cards — stack */
+  .hero-info-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-info-card {
     width: 90%;
+  }
+
+  /* Countdown */
+  .countdown-number {
+    font-size: 2rem;
+  }
+
+  .countdown-separator {
+    font-size: 1.5rem;
+  }
+
+  /* About section */
+  .about-name {
+    font-size: 1.4rem;
+  }
+
+  /* CTA */
+  .cta-title {
+    font-size: 1.6rem;
+  }
+
+  /* Portrait size adjustments */
+  .portrait-aura  { width: 190px; height: 190px; }
+  .portrait-ring  { width: 186px; height: 186px; }
+  .portrait-halo-outer { width: 210px; height: 210px; }
+  .portrait-halo-inner { width: 198px; height: 198px; }
+
+  /* Itinerary — flow into page */
+  .itinerary-floating {
+    position: relative !important;
+    top: auto !important;
+    right: auto !important;
+    transform: none !important;
+    width: 90%;
+    margin: 24px auto 0;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .hero-actions .me-3 {
+    margin-right: 0 !important;
+    margin-bottom: 10px;
   }
 }
