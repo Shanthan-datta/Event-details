@@ -3,7 +3,8 @@
   <div class="container text-center">
     <div class="page-header-om">ॐ</div>
     <h1 class="page-header-title">Awards & Honours</h1>
-    <p class="page-header-subtitle">Recognition of His Holiness Sri Ganapathi Sachchidananda Swamiji's divine service</p>
+    <p class="page-header-subtitle">Recognition of His Holiness Sri Ganapathi Sachchidananda Swamiji's divine service
+    </p>
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb justify-content-center">
         <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
@@ -37,11 +38,11 @@
   <div class="container">
     <div class="gallery-grid">
       <div class="gallery-item reveal" *ngFor="let award of awards; let i = index"
-           [style.animation-delay]="(i * 0.08) + 's'" (click)="openLightbox(award)">
+        [style.animation-delay]="(i * 0.08) + 's'" (click)="openLightbox(award)">
         <div class="gallery-card">
           <div class="gallery-image-wrapper">
             <img [src]="award.image" [alt]="award.title" class="gallery-image"
-                 (error)="$any($event.target).src = 'om-symbol.png'">
+              (error)="$any($event.target).src = 'om-symbol.png'">
             <div class="gallery-overlay">
               <i class="bi bi-zoom-in"></i>
               <span>View Details</span>
@@ -71,7 +72,7 @@
     </button>
     <div class="lightbox-image-container">
       <img [src]="selectedAward.image" [alt]="selectedAward.title" class="lightbox-image"
-           (error)="$any($event.target).src = 'om-symbol.png'">
+        (error)="$any($event.target).src = 'om-symbol.png'">
     </div>
     <button class="lightbox-nav lightbox-next" (click)="navigateAward(1)">
       <i class="bi bi-chevron-right"></i>
@@ -92,6 +93,7 @@
   <div class="container text-center">
     <h2 class="cta-banner-title">Experience the Divine Presence</h2>
     <p class="cta-banner-text">Join us for Swamiji's visit to Ireland on 16 June 2026</p>
-    <a href="https://forms.gle/YOUR_GOOGLE_FORM_ID" target="_blank" rel="noopener" class="btn btn-divine btn-lg"><i class="bi bi-pencil-square me-2"></i>Register Now</a>
+    <a href="https://forms.gle/cmvEMXfy5vsq5BvJ6" target="_blank" rel="noopener" class="btn btn-divine btn-lg"><i
+        class="bi bi-pencil-square me-2"></i>Register Now</a>
   </div>
 </section>

@@ -51,13 +51,11 @@
   height: 220px;
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  background: radial-gradient(
-    circle,
-    rgba(255, 215, 0, 0.25) 0%,
-    rgba(232, 137, 29, 0.12) 40%,
-    rgba(212, 160, 23, 0.05) 65%,
-    transparent 80%
-  );
+  background: radial-gradient(circle,
+      rgba(255, 215, 0, 0.25) 0%,
+      rgba(232, 137, 29, 0.12) 40%,
+      rgba(212, 160, 23, 0.05) 65%,
+      transparent 80%);
   z-index: 3;
   animation: auraPulse 4s ease-in-out infinite;
 }
@@ -117,57 +115,90 @@
 }
 
 .orb-1 {
-  width: 6px; height: 6px;
-  top: 10%; left: 15%;
+  width: 6px;
+  height: 6px;
+  top: 10%;
+  left: 15%;
   animation: orbFloat1 7s ease-in-out infinite;
 }
+
 .orb-2 {
-  width: 4px; height: 4px;
-  top: 20%; right: 10%;
+  width: 4px;
+  height: 4px;
+  top: 20%;
+  right: 10%;
   animation: orbFloat2 8s ease-in-out infinite 0.5s;
 }
+
 .orb-3 {
-  width: 5px; height: 5px;
-  bottom: 20%; left: 8%;
+  width: 5px;
+  height: 5px;
+  bottom: 20%;
+  left: 8%;
   animation: orbFloat3 6s ease-in-out infinite 1s;
 }
+
 .orb-4 {
-  width: 3px; height: 3px;
-  bottom: 15%; right: 15%;
+  width: 3px;
+  height: 3px;
+  bottom: 15%;
+  right: 15%;
   animation: orbFloat4 9s ease-in-out infinite 1.5s;
 }
+
 .orb-5 {
-  width: 4px; height: 4px;
-  top: 5%; left: 50%;
+  width: 4px;
+  height: 4px;
+  top: 5%;
+  left: 50%;
   animation: orbFloat5 7.5s ease-in-out infinite 2s;
 }
+
 .orb-6 {
-  width: 5px; height: 5px;
-  top: 50%; right: 2%;
+  width: 5px;
+  height: 5px;
+  top: 50%;
+  right: 2%;
   animation: orbFloat6 8.5s ease-in-out infinite 0.8s;
 }
+
 .orb-7 {
-  width: 3px; height: 3px;
-  bottom: 5%; left: 40%;
+  width: 3px;
+  height: 3px;
+  bottom: 5%;
+  left: 40%;
   animation: orbFloat7 6.5s ease-in-out infinite 1.2s;
 }
+
 .orb-8 {
-  width: 4px; height: 4px;
-  top: 50%; left: 2%;
+  width: 4px;
+  height: 4px;
+  top: 50%;
+  left: 2%;
   animation: orbFloat8 7s ease-in-out infinite 2.5s;
 }
 
 /* Portrait Animations */
 @keyframes portraitFloat {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
 @keyframes auraPulse {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translate(-50%, -50%) scale(1);
     opacity: 0.8;
   }
+
   50% {
     transform: translate(-50%, -50%) scale(1.12);
     opacity: 1;
@@ -175,10 +206,13 @@
 }
 
 @keyframes ringPulse {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translate(-50%, -50%) scale(1);
     border-color: rgba(212, 160, 23, 0.2);
   }
+
   50% {
     transform: translate(-50%, -50%) scale(1.05);
     border-color: rgba(255, 215, 0, 0.35);
@@ -186,52 +220,176 @@
 }
 
 @keyframes haloRotate {
-  from { transform: translate(-50%, -50%) rotate(0deg); }
-  to { transform: translate(-50%, -50%) rotate(360deg); }
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
 }
 
 /* Orb floating paths — each unique */
 @keyframes orbFloat1 {
-  0%, 100% { transform: translate(0, 0); opacity: 0.3; }
-  25% { transform: translate(8px, -12px); opacity: 0.8; }
-  50% { transform: translate(-5px, -20px); opacity: 0.5; }
-  75% { transform: translate(12px, -8px); opacity: 0.9; }
+
+  0%,
+  100% {
+    transform: translate(0, 0);
+    opacity: 0.3;
+  }
+
+  25% {
+    transform: translate(8px, -12px);
+    opacity: 0.8;
+  }
+
+  50% {
+    transform: translate(-5px, -20px);
+    opacity: 0.5;
+  }
+
+  75% {
+    transform: translate(12px, -8px);
+    opacity: 0.9;
+  }
 }
+
 @keyframes orbFloat2 {
-  0%, 100% { transform: translate(0, 0); opacity: 0.4; }
-  25% { transform: translate(-10px, 8px); opacity: 0.7; }
-  50% { transform: translate(-15px, -5px); opacity: 0.9; }
-  75% { transform: translate(5px, 12px); opacity: 0.5; }
+
+  0%,
+  100% {
+    transform: translate(0, 0);
+    opacity: 0.4;
+  }
+
+  25% {
+    transform: translate(-10px, 8px);
+    opacity: 0.7;
+  }
+
+  50% {
+    transform: translate(-15px, -5px);
+    opacity: 0.9;
+  }
+
+  75% {
+    transform: translate(5px, 12px);
+    opacity: 0.5;
+  }
 }
+
 @keyframes orbFloat3 {
-  0%, 100% { transform: translate(0, 0); opacity: 0.5; }
-  33% { transform: translate(10px, -15px); opacity: 0.8; }
-  66% { transform: translate(-8px, -10px); opacity: 0.6; }
+
+  0%,
+  100% {
+    transform: translate(0, 0);
+    opacity: 0.5;
+  }
+
+  33% {
+    transform: translate(10px, -15px);
+    opacity: 0.8;
+  }
+
+  66% {
+    transform: translate(-8px, -10px);
+    opacity: 0.6;
+  }
 }
+
 @keyframes orbFloat4 {
-  0%, 100% { transform: translate(0, 0); opacity: 0.3; }
-  50% { transform: translate(-12px, -18px); opacity: 0.7; }
+
+  0%,
+  100% {
+    transform: translate(0, 0);
+    opacity: 0.3;
+  }
+
+  50% {
+    transform: translate(-12px, -18px);
+    opacity: 0.7;
+  }
 }
+
 @keyframes orbFloat5 {
-  0%, 100% { transform: translate(0, 0); opacity: 0.4; }
-  25% { transform: translate(-8px, 10px); opacity: 0.6; }
-  50% { transform: translate(5px, 15px); opacity: 0.9; }
-  75% { transform: translate(10px, 5px); opacity: 0.5; }
+
+  0%,
+  100% {
+    transform: translate(0, 0);
+    opacity: 0.4;
+  }
+
+  25% {
+    transform: translate(-8px, 10px);
+    opacity: 0.6;
+  }
+
+  50% {
+    transform: translate(5px, 15px);
+    opacity: 0.9;
+  }
+
+  75% {
+    transform: translate(10px, 5px);
+    opacity: 0.5;
+  }
 }
+
 @keyframes orbFloat6 {
-  0%, 100% { transform: translate(0, 0); opacity: 0.3; }
-  33% { transform: translate(-10px, -8px); opacity: 0.7; }
-  66% { transform: translate(-5px, 10px); opacity: 0.5; }
+
+  0%,
+  100% {
+    transform: translate(0, 0);
+    opacity: 0.3;
+  }
+
+  33% {
+    transform: translate(-10px, -8px);
+    opacity: 0.7;
+  }
+
+  66% {
+    transform: translate(-5px, 10px);
+    opacity: 0.5;
+  }
 }
+
 @keyframes orbFloat7 {
-  0%, 100% { transform: translate(0, 0); opacity: 0.5; }
-  50% { transform: translate(8px, -12px); opacity: 0.8; }
+
+  0%,
+  100% {
+    transform: translate(0, 0);
+    opacity: 0.5;
+  }
+
+  50% {
+    transform: translate(8px, -12px);
+    opacity: 0.8;
+  }
 }
+
 @keyframes orbFloat8 {
-  0%, 100% { transform: translate(0, 0); opacity: 0.4; }
-  25% { transform: translate(6px, -10px); opacity: 0.6; }
-  50% { transform: translate(12px, 5px); opacity: 0.8; }
-  75% { transform: translate(-5px, 8px); opacity: 0.5; }
+
+  0%,
+  100% {
+    transform: translate(0, 0);
+    opacity: 0.4;
+  }
+
+  25% {
+    transform: translate(6px, -10px);
+    opacity: 0.6;
+  }
+
+  50% {
+    transform: translate(12px, 5px);
+    opacity: 0.8;
+  }
+
+  75% {
+    transform: translate(-5px, 8px);
+    opacity: 0.5;
+  }
 }
 
 .hero-overlay {
@@ -260,11 +418,42 @@
   animation: float 6s ease-in-out infinite;
 }
 
-.particle-1 { top: 20%; left: 10%; animation-delay: 0s; }
-.particle-2 { top: 60%; left: 80%; animation-delay: 1s; width: 8px; height: 8px; }
-.particle-3 { top: 30%; left: 70%; animation-delay: 2s; width: 4px; height: 4px; }
-.particle-4 { top: 80%; left: 20%; animation-delay: 3s; }
-.particle-5 { top: 50%; left: 50%; animation-delay: 4s; width: 10px; height: 10px; opacity: 0.2; }
+.particle-1 {
+  top: 20%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.particle-2 {
+  top: 60%;
+  left: 80%;
+  animation-delay: 1s;
+  width: 8px;
+  height: 8px;
+}
+
+.particle-3 {
+  top: 30%;
+  left: 70%;
+  animation-delay: 2s;
+  width: 4px;
+  height: 4px;
+}
+
+.particle-4 {
+  top: 80%;
+  left: 20%;
+  animation-delay: 3s;
+}
+
+.particle-5 {
+  top: 50%;
+  left: 50%;
+  animation-delay: 4s;
+  width: 10px;
+  height: 10px;
+  opacity: 0.2;
+}
 
 /* Hero Content */
 .hero-content {
@@ -305,7 +494,7 @@
   display: block;
   line-height: 1.2;
   margin-top: 5px;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .hero-role {
@@ -620,22 +809,18 @@
 .program-image-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    180deg,
-    transparent 40%,
-    rgba(44, 24, 16, 0.15) 70%,
-    rgba(44, 24, 16, 0.4) 100%
-  );
+  background: linear-gradient(180deg,
+      transparent 40%,
+      rgba(44, 24, 16, 0.15) 70%,
+      rgba(44, 24, 16, 0.4) 100%);
   transition: all 0.4s ease;
 }
 
 .program-card:hover .program-image-overlay {
-  background: linear-gradient(
-    180deg,
-    rgba(212, 160, 23, 0.05) 0%,
-    rgba(139, 26, 26, 0.15) 50%,
-    rgba(44, 24, 16, 0.5) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(212, 160, 23, 0.05) 0%,
+      rgba(139, 26, 26, 0.15) 50%,
+      rgba(44, 24, 16, 0.5) 100%);
 }
 
 /* Icon Badge */
@@ -926,34 +1111,152 @@
    RESPONSIVE
    ============================================ */
 @media (max-width: 992px) {
-  .hero-name { font-size: 2rem; }
-  .hero-programs { font-size: 1.1rem; }
-  .countdown-number { font-size: 2.5rem; }
-  .countdown-unit { min-width: 70px; }
-  .venue-details { padding-left: 0; margin-top: 20px; }
+  .hero-name {
+    font-size: 2rem;
+  }
+
+  .hero-programs {
+    font-size: 1.1rem;
+  }
+
+  .countdown-number {
+    font-size: 2.5rem;
+  }
+
+  .countdown-unit {
+    min-width: 70px;
+  }
+
+  .venue-details {
+    padding-left: 0;
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 768px) {
-  .hero-section { padding: 100px 0 60px; }
-  .hero-om { font-size: 3rem; }
-  .hero-name { font-size: 1.5rem; }
-  .hero-title { font-size: 1.3rem; }
-  .hero-info-cards { flex-direction: column; align-items: center; }
-  .hero-lotus { width: 100px; opacity: 0.3; }
-  .countdown-number { font-size: 2rem; }
-  .countdown-separator { font-size: 1.5rem; }
-  .cta-title { font-size: 1.6rem; }
-  .about-name { font-size: 1.4rem; }
-  .divine-portrait { width: 200px; height: 200px; }
-  .portrait-img { width: 150px; height: 150px; }
-  .portrait-aura { width: 170px; height: 170px; }
-  .portrait-ring { width: 166px; height: 166px; }
-  .portrait-halo-outer { width: 195px; height: 195px; }
-  .portrait-halo-inner { width: 182px; height: 182px; }
+  .hero-section {
+    padding: 100px 0 60px;
+  }
+
+  .hero-om {
+    font-size: 3rem;
+  }
+
+  .hero-name {
+    font-size: 1.5rem;
+  }
+
+  .hero-title {
+    font-size: 1.3rem;
+  }
+
+  .hero-info-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-lotus {
+    width: 100px;
+    opacity: 0.3;
+  }
+
+  .countdown-number {
+    font-size: 2rem;
+  }
+
+  .countdown-separator {
+    font-size: 1.5rem;
+  }
+
+  .cta-title {
+    font-size: 1.6rem;
+  }
+
+  .about-name {
+    font-size: 1.4rem;
+  }
+
+  .divine-portrait {
+    width: 200px;
+    height: 200px;
+  }
+
+  .portrait-img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .portrait-aura {
+    width: 170px;
+    height: 170px;
+  }
+
+  .portrait-ring {
+    width: 166px;
+    height: 166px;
+  }
+
+  .portrait-halo-outer {
+    width: 195px;
+    height: 195px;
+  }
+
+  .portrait-halo-inner {
+    width: 182px;
+    height: 182px;
+  }
 }
 
 @media (max-width: 576px) {
-  .hero-actions { flex-direction: column; align-items: center; }
-  .hero-actions .btn { width: 100%; max-width: 280px; }
-  .hero-actions .me-3 { margin-right: 0 !important; margin-bottom: 10px; }
+  .hero-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .hero-actions .me-3 {
+    margin-right: 0 !important;
+    margin-bottom: 10px;
+  }
+}
+
+.itinerary-floating {
+  position: absolute;
+  right: 40px;
+  top: 55%;
+  transform: translateY(-50%);
+  width: 280px;
+  /* smaller */
+  background: rgba(255, 248, 220, 0.9);
+  border: 2px solid #D4A017;
+  border-radius: 16px;
+  padding: 14px;
+  box-shadow: 0 15px 40px rgba(212, 160, 23, 0.25);
+  backdrop-filter: blur(6px);
+  z-index: 2;
+}
+
+.itinerary-title {
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+
+.itinerary-list li {
+  font-size: 0.85rem;
+  margin-bottom: 6px;
+  line-height: 1.3;
+}
+
+@media (max-width: 992px) {
+  .itinerary-floating {
+    position: static;
+    transform: none;
+    margin: 30px auto 0;
+    width: 90%;
+  }
 }

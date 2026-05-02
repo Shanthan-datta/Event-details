@@ -5,15 +5,16 @@
       <span class="brand-text">Jaya Guru Datta</span>
     </a>
 
-    <button class="navbar-toggler" type="button" (click)="toggleMenu()"
-            [attr.aria-expanded]="isMenuOpen" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" (click)="toggleMenu()" [attr.aria-expanded]="isMenuOpen"
+      aria-label="Toggle navigation">
       <i class="bi" [ngClass]="isMenuOpen ? 'bi-x-lg' : 'bi-list'"></i>
     </button>
 
     <div class="collapse navbar-collapse" [class.show]="isMenuOpen">
       <ul class="navbar-nav ms-auto align-items-center">
         <li class="nav-item">
-          <a class="nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="closeMenu()">Home</a>
+          <a class="nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"
+            (click)="closeMenu()">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" routerLink="/about" routerLinkActive="active" (click)="closeMenu()">About Swamiji</a>
@@ -22,13 +23,15 @@
           <a class="nav-link" routerLink="/awards" routerLinkActive="active" (click)="closeMenu()">Awards & Honours</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/directions" routerLinkActive="active" (click)="closeMenu()">Venue & Directions</a>
+          <a class="nav-link" routerLink="/directions" routerLinkActive="active" (click)="closeMenu()">Venue &
+            Directions</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" routerLink="/" fragment="contact" (click)="closeMenu()">Contact Us</a>
         </li>
         <li class="nav-item nav-register">
-          <a class="btn btn-divine btn-sm" href="https://forms.gle/YOUR_GOOGLE_FORM_ID" target="_blank" rel="noopener" (click)="closeMenu()">
+          <a class="btn btn-divine btn-sm" href="https://forms.gle/cmvEMXfy5vsq5BvJ6" target="_blank" rel="noopener"
+            (click)="closeMenu()">
             <i class="bi bi-pencil-square me-1"></i> Register Now
           </a>
         </li>

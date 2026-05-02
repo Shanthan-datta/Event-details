@@ -23,6 +23,12 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   programs = [
     {
+      icon: 'bi-heart',
+      title: 'Music for Meditation & Healing by Swamiji',
+      description: 'Swamiji\'s music concert for meditation and healing, where divine vibrations and sacred ragas guide the mind into deep peace and inner balance',
+      image: 'swamiji-8.jpeg'
+    },
+    {
       icon: 'bi-book',
       title: 'Hanuman Chalisa Parayana',
       description: 'Join the sacred collective recitation of the Hanuman Chalisa, invoking the blessings of Lord Hanuman for strength, devotion, and divine grace.',
@@ -40,12 +46,7 @@ export class HomeComponent implements OnInit, OnDestroy {
       description: 'Receive the divine discourse and blessings from His Holiness Sri Ganapathi Sachchidananda Swamiji — a rare and precious opportunity.',
       image: 'swamiji-6.jpeg'
     },
-    {
-      icon: 'bi-heart',
-      title: 'Satsang Program',
-      description: 'Come together in the spirit of devotion, unity, and spiritual harmony to receive Swamiji\'s divine blessings and guidance.',
-      image: 'swamiji-8.jpeg'
-    }
+
   ];
 
   ngOnInit() {
