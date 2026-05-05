@@ -949,12 +949,18 @@
   background: linear-gradient(180deg, var(--cream) 0%, var(--bg-section-alt) 100%);
 }
 
-.highlight-text {
-  margin-top: 8px;
-  font-size: 0.95rem;
-  color: #c08400;
-  /* gold theme */
-  font-weight: 600;
+.highlight-accommodation {
+  background: linear-gradient(135deg, #ffb347, #ff8c00);
+  /* rich orange gradient */
+  color: #000;
+  /* black text */
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 12px 0;
+  box-shadow: 0 4px 12px rgba(255, 140, 0, 0.3);
 }
 
 .contact-card {
