@@ -949,6 +949,14 @@
   background: linear-gradient(180deg, var(--cream) 0%, var(--bg-section-alt) 100%);
 }
 
+.highlight-text {
+  margin-top: 8px;
+  font-size: 0.95rem;
+  color: #c08400;
+  /* gold theme */
+  font-weight: 600;
+}
+
 .contact-card {
   background: white;
   border-radius: 20px;
